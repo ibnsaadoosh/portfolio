@@ -1,0 +1,7 @@
+udemy rule of thumb:
+like to have layouts in grid, and like to
+build out small elements like nav bar using flex box
+
+
+<!-- ctrl+/ or ctr+z to comment the line -->
+<!-- ctrl+shift+a -->
