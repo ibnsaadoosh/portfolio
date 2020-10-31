@@ -5,3 +5,6 @@ build out small elements like nav bar using flex box
 
 <!-- ctrl+/ or ctr+z to comment the line -->
 <!-- ctrl+shift+a -->
+
+npm install bootstrap-social
+npm i @fortawesome/fontawesome-free

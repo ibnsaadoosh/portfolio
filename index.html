@@ -3,13 +3,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
     <title>AboSaadoosh</title>
+    <!-- Jquery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- IsInViewport -->
+    <script src="node_modules/is-in-viewport/lib/isInViewport.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
      <!-- Bootstrap Social -->
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <!-- FONTAWESOME CSS -->
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+     <!-- Fontawesome v5 -->
+     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+     <!-- Fontawesome v4 -->
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css"> -->
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="style.css">
@@ -17,178 +25,182 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="nav-wrapper">
-        <div class="left-side">
-          <div class="nav-link-wrapper active-nav-link">
-            <a href="index.html">Projects</a>
-          </div>
-          
-          <div class="nav-link-wrapper">
-            <a href="cv.html">cv</a>
-          </div>
-
-        </div>
-
-        <div class="right-side">
-          <div class="brand">
-            AboSaadoosh
-          </div>
+    <nav class="navbar navbar-light navbar-expand-sm nav-wrapper">
+      <div class="container">
+        <div class="collapse navbar-collapse " id="Navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home"></span>Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="./cv.html"><span class="fa fa-file"></span>
+              CV</a></li>
+          </ul>        
         </div>
       </div>
 
-      <div class="content-wrapper"> <!-- kind of master wrapper -->
-        <div class="portfolio-items-wrapper"> <!-- collection wrapper -->
-        
-          <div class="portfolio-item-wrapper"> <!-- single wrapper -->
-            <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
-
-            <div class="image-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logos/quip.png" alt="">
-              </div>
-
-              <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
-            </div>
-          </div>
-
-          <div class="portfolio-item-wrapper"> <!-- single wrapper -->
-            <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
-
-            <div class="image-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logo/mips3.png" alt="">
-              </div>
-              
-              <div class="subtitle">Simple MIPS simulator that consists of an assembler and virtual machine implemented in Java for
-                faculty purpose</div>
-            </div>
-          </div>
-
-          <div class="portfolio-item-wrapper"> <!-- single wrapper -->
-            <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
-
-            <div class="image-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logo/cli.jpg" alt="">
-              </div>
-              
-              <div class="subtitle">Unix based basic command line interpreter with Java</div>
-            </div>
-          </div>
-
-          <div class="portfolio-item-wrapper"> <!-- single wrapper -->
-            <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
-
-            <div class="image-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logos/quip.png" alt="">
-              </div>
-              
-              <div class="subtitle">Simple HTTP Client-Server project with Java for faculty purpose as a practice on Socket
-                programming</div>
-            </div>
-          </div>
-
-          <div class="portfolio-item-wrapper"> <!-- single wrapper -->
-            <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
-
-            <div class="image-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logos/quip.png" alt="">
-              </div>
-              
-              <div class="subtitle">Flight Reservation application with C# and SQL server as a practice on Database faculty course</div>
-            </div>
-          </div>
-
-          <div class="portfolio-item-wrapper"> <!-- single wrapper -->
-            <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
-
-            <div class="image-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logos/quip.png" alt="">
-              </div>
-              
-              <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
-            </div>
-          </div>
-
-          <div class="portfolio-item-wrapper"> <!-- single wrapper -->
-            <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg)"></div>
-
-            <div class="image-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logos/quip.png" alt="">
-              </div>
-              
-              <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
-            </div>
-          </div>
-
-          <div class="portfolio-item-wrapper"> <!-- single wrapper -->
-            <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
-
-            <div class="image-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logos/quip.png" alt="">
-              </div>
-              
-              <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
-            </div>
-          </div>
-
-          <div class="portfolio-item-wrapper"> <!-- single wrapper -->
-            <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpg)"></div>
-
-            <div class="image-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logos/quip.png" alt="">
-              </div>
-              
-              <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
-            </div>
-          </div>
-
-          <div class="portfolio-item-wrapper"> <!-- single wrapper -->
-            <div class="portfolio-img-background" style="background-image:url(images/portfolio10.jpg)"></div>
-
-            <div class="image-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logos/quip.png" alt="">
-              </div>
-              
-              <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
-            </div>
-          </div>
-
-          <div class="portfolio-item-wrapper"> <!-- single wrapper -->
-            <div class="portfolio-img-background" style="background-image:url(images/portfolio11.jpg)"></div>
-
-            <div class="image-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logos/quip.png" alt="">
-              </div>
-              
-              <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
-            </div>
-          </div>
-
-          <div class="portfolio-item-wrapper"> <!-- single wrapper -->
-            <div class="portfolio-img-background" style="background-image:url(images/portfolio12.jpg)"></div>
-
-            <div class="image-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logos/quip.png" alt="">
-              </div>
-              
-              <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
-            </div>
-          </div>
-
-          
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="right-side">
+        <div class="brand">
+          AboSaadoosh
         </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">  
+        <div class="col-12 col-sm-4 portfolio-item-wrapper"> <!-- single wrapper -->
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+
+          <div class="image-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/quip.png" alt="">
+            </div>
+            
+            <div class="subtitle">
+              I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 portfolio-item-wrapper"> <!-- single wrapper -->
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+
+
+          <div class="image-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logo/mips3.png" alt="">
+            </div>
+            
+            <div class="subtitle">Simple MIPS simulator that consists of an assembler and virtual machine implemented in Java for
+              faculty purpose
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 portfolio-item-wrapper"> <!-- single wrapper -->
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+
+          <div class="image-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logo/cli.jpg" alt="">
+            </div>
+            
+            <div class="subtitle">Unix based basic command line interpreter with Java</div>
+          </div>
+        </div>
+      </div>
+          
+      <div class="row">
+        <div class="col-12 col-sm-4 portfolio-item-wrapper"> <!-- single wrapper -->
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+
+          <div class="image-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/quip.png" alt="">
+            </div>
+            
+            <div class="subtitle">Simple HTTP Client-Server project with Java for faculty purpose as a practice on Socket
+              programming</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-4 portfolio-item-wrapper"> <!-- single wrapper -->
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+
+          <div class="image-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/quip.png" alt="">
+            </div>
+            
+            <div class="subtitle">Flight Reservation application with C# and SQL server as a practice on Database faculty course</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-4 portfolio-item-wrapper"> <!-- single wrapper -->
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+
+          <div class="image-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/quip.png" alt="">
+            </div>
+            
+            <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="row">
+        <div class="col-12 col-sm-4 portfolio-item-wrapper"> <!-- single wrapper -->
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg)"></div>
+
+          <div class="image-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/quip.png" alt="">
+            </div>
+            
+            <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-4 portfolio-item-wrapper"> <!-- single wrapper -->
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
+
+          <div class="image-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/quip.png" alt="">
+            </div>
+            
+            <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-4 portfolio-item-wrapper"> <!-- single wrapper -->
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpg)"></div>
+
+          <div class="image-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/quip.png" alt="">
+            </div>
+            
+            <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
+          </div>
+        </div>
+      </div>
         
+      <div class="row">
+        <div class="col-12 col-sm-4 portfolio-item-wrapper"> <!-- single wrapper -->
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio10.jpg)"></div>
+
+          <div class="image-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/quip.png" alt="">
+            </div>
+            
+            <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-4 portfolio-item-wrapper"> <!-- single wrapper -->
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio11.jpg)"></div>
+
+          <div class="image-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/quip.png" alt="">
+            </div>
+            
+            <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-4 portfolio-item-wrapper"> <!-- single wrapper -->
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio12.jpg)"></div>
+
+          <div class="image-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="images/logos/quip.png" alt="">
+            </div>
+            
+            <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -196,6 +208,9 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
   
+  <script>
+    $( 'div:in-viewport' ).css( 'background-color', 'red' );
+  </script>
   <script>
     const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
     portfolioItems.forEach(portfolioItem => {
