@@ -1,0 +1,31 @@
+/* nav style */
+
+nav {
+  background-color: lightgray;
+}
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper :hover {
+  border-bottom: 1px solid black;
+}
+
+
+.nav-link-wrapper a {
+  color: #a8a8a8;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black !important;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+
