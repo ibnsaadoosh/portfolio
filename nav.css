@@ -2,6 +2,14 @@ nav {
     background-color: lightgray;
   }
 
-  .left-side {
-      
-  }
+.navbar {
+    position: relative;
+}
+
+.navbar-header {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+
