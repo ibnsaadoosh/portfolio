@@ -1,4 +1,8 @@
 /* nav style */
+
+nav {
+  background-color: lightgray;
+}
 .nav-wrapper
 {
     display: flex;
@@ -46,3 +50,4 @@
 .active-nav-link a {
   color: black !important;
 }
+

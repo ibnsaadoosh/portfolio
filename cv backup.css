@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,8 +7,8 @@
 
 .print-area {
     width: 80%;
-    /* margin: 20px auto; */
-}
+    /* margin: 20px auto; 
+}  */
 
 .print-area .header {
     width: 100%;
